@@ -40,10 +40,10 @@
     </nav>
   </header>
   <main>
-    <section class=" w-[1400px] pb-20 mx-auto flex">
+    <section class=" w-[1400px] pb-20 mx-auto flex gap-5">
       <!-- uporer ongsho -->
-      <div class=" mt-5  bg-white p-6  rounded-lg shadow-lg">
-        <div class="flex justify-between gap-5 mb-7 ">
+      <div class=" mt-5  bg-white   rounded-lg shadow-lg">
+        <div class="flex justify-between gap-5 mb-4 p-6 ">
           <div class="flex items-center justify-center border gap-3 border-white w-1/4 rounded-xl bg-[#F4F7FF] ">
             <i
               class="fa-solid fa-square-check rounded-full pt-1 btn btn-circle text-center bg-white text-3xl text-blue-700"></i>
@@ -52,124 +52,138 @@
               <h1 class="text-3xl font-bold">05</h1>
             </div>
           </div>
-          <div
-            class="flex w-2/4 items-center pl-6 bg-[linear-gradient(92deg,_#3752FD_0.25%,_#6C7FFA_52.64%,_#9BA8F8_99.84%)] rounded-lg p-4">
+          <a target="_blank" href="./blog.html"
+            class="flex w-2/4 items-center cursor-pointer pl-6 bg-[linear-gradient(92deg,_#3752FD_0.25%,_#6C7FFA_52.64%,_#9BA8F8_99.84%)] rounded-lg p-4">
             <img src="./assets/board.png" alt="">
             <h2 class="text-white text-2xl ">Discover Something New Today!</h2>
-          </div>
+          </a>
           <div class="flex  items-center justify-center gap-2 px-5 bg-[#F4F7FF] rounded-xl ">
             <i class="fa-solid fa-calendar btn btn-circle bg-white pt-2 text-2xl"></i>
             <h2 class="text-[#00303C] font-bold text-xl"><span
                 class="text-[#00303C] text-xl font-normal ">Wed,</span><br>Jul 28 2025</h2>
           </div>
         </div>
-        <hr class="border-20 border-dashed pb-6">
+        <hr class=" border-dashed border-t-2 text-5xl pb-3">
         <!-- card section -->
-        <div class="grid grid-cols-3 gap-13 w-full">
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
-            <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              <p> ShopEase</p>
+
+        <div class="grid grid-cols-3 gap-8 p-6">
+          <!-- Card 1 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
+            <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block ">
+              <p class="text-sm font-semibold">ShopEase</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-medium mb-4">Fix Mobile Button Issue</h2>
-            <div class="bg-[#FFF] rounded-md p-4 mb-4">
-              <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Fix Mobile Button Issue</h2>
+            <div class="bg-[#FFF]  rounded-md p-4 mb-4">
+              <p class="text-sm text-[#000] truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure
+                onClick works properly
+                and ensure onClick works properly</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
+
+          <!-- Card 2 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
             <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              CloudSync
+              <p class="text-sm font-semibold">CloudSync</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-medium mb-4">Add Dark Mode</h2>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Add Dark Mode</h2>
             <div class="bg-[#FFF] rounded-md p-4 mb-4">
-              <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="text-sm text-[#000]">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
+
+          <!-- Card 3 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
             <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              SwiftPay
+              <p class="text-sm font-semibold">SwiftPay</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-medium mb-4">Optimize  Home page </h2>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Optimize Home Page</h2>
             <div class="bg-[#FFF] rounded-md p-4 mb-4">
               <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
+
+          <!-- Card 4 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
             <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              Meta
+              <p class="text-sm font-semibold">Meta</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-medium mb-4">Add new emoji 🤲</h2>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Add New Emoji 🤲</h2>
             <div class="bg-[#FFF] rounded-md p-4 mb-4">
               <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
+
+          <!-- Card 5 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
             <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              Goggle LLC
+              <p class="text-sm font-semibold">Google LLC</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-medium mb-4">Integrate OpenAI API </h2>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Integrate OpenAI API</h2>
             <div class="bg-[#FFF] rounded-md p-4 mb-4">
               <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6 ">
+
+          <!-- Card 6 -->
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-6">
             <div class="bg-[#FFF] text-[#00303C] rounded-md py-1 px-2 mb-4 inline-block">
-              Glassdoar
+              <p class="text-sm font-semibold">Glassdoor</p>
             </div>
-            <h2 class="text-2xl text-[#00303] font-semibold mb-4 ">Improve Job searching </h2>
+            <h2 class="text-2xl text-[#00303C] font-medium mb-4">Improve Job Searching</h2>
             <div class="bg-[#FFF] rounded-md p-4 mb-4">
               <p class="text-sm text-[#000]">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex justify-between items-center">
               <div>
-                <p class="text-sm text-gray-500">Deadline</p>
+                <p class="text-sm text-gray-500 whitespace-nowrap">Deadline</p>
                 <p class="text-sm font-semibold">21 March 2025</p>
               </div>
-              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full sm:w-auto">
                 Completed
               </button>
             </div>
@@ -177,7 +191,7 @@
         </div>
       </div>
       <!-- activity log -->
-      <div class="bg-white rounded-lg shadow-md mt-5 ml-10 w-1/3 p-6">
+      <div class="bg-white rounded-lg shadow-md mt-5 w-1/2 p-6">
         <div class=" text-center mb-4">
           <div class="">
             <i class="fa-solid fa-clock-rotate-left"></i>
@@ -187,8 +201,9 @@
             Clear History
           </button>
         </div>
-        <hr class="border-t border-gray-200 mb-4">
+        <hr class=" border-gray-200 border-dashed border-t-2 mb-4">
       </div>
+      
     </section>
 </body>
 </main>
