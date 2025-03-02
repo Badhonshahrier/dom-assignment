@@ -34,68 +34,60 @@
             <h1 class="text-center font-bold text-5xl pt-4">Blogs</h1>
             <div class="py-10 space-y-5">
                 <div class=" bg-[#fff]  border rounded-xl ">
-                    <div class=" py-4 px-6 text-2xl font-bold">
-                        Question-1: What are the different ways to select an element in the DOM?
+                    <div class=" py-4 px-6 text-xl font-bold ">
+                        <p> Question-1: What are the different ways to select an element in the DOM?</p>
                     </div>
                     <hr class="w-full">
-                    <div class=" py-4 px-6 text-xl  ">
-                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
-                        page
-                        so that programs can change the document structure, style, and content. The DOM represents the
-                        document as nodes and objects; that way, programming languages can interact with the page.
+                    <div class=" py-4 px-6 text-lg  ">
+                        When working with JavaScript and the Document Object Model (DOM),several ways to select elements
+                        1.By ID:document.getElementById("id")=>Selects a single element with the specified id.
+                        2.By Class Name:document.getElementsByClassName("class")=>select elements by their class
+                        attribute.
+                        3.By Tag Name:document.getElementsByTagName()=>select elements by their tag name ( div, p, a).
+                        4.By CSS Selector:document.querySelector() to select the first element that matches a CSS
+                        selector.
+                        document.querySelectorAll() to select all elements that match a CSS selector.
                     </div>
                 </div>
                 <div class=" bg-[#fff] border rounded-xl">
-                    <div class=" py-4 px-6 text-2xl font-bold">
+                    <div class=" py-4 px-6 text-xl font-bold">
                         Question-2: What is the difference between innerHTML, innerText, and textContent ?
                     </div>
                     <hr class="w-full">
-                    <div class=" py-4 px-6 text-xl  ">
-                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
-                        page
-                        so that programs can change the document structure, style, and content. The DOM represents the
-                        document as nodes and objects; that way, programming languages can interact with the page.
+                    <div class=" py-4 px-6 text-lg  ">
+                        innerHTML sets or gets HTML content, rendering tags. innerText retrieves only visible text, ignoring hidden elements. textContent gets all text, including hidden content, without parsing HTML. innerHTML risks XSS attacks, while textContent is fastest. Use innerText for visible text, textContent for raw text, and innerHTML for HTML content.
                     </div>
                 </div>
                 <div class=" bg-[#fff] border rounded-xl">
-                    <div class=" py-4 px-6 text-2xl font-bold">
+                    <div class=" py-4 px-6 text-xl font-bold">
                         Question-3: What is event delegation in the DOM?
                     </div>
                     <hr class="w-full">
-                    <div class=" py-4 px-6 text-xl  ">
-                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
-                        page
-                        so that programs can change the document structure, style, and content. The DOM represents the
-                        document as nodes and objects; that way, programming languages can interact with the page.
+                    <div class=" py-4 px-6 text-lg  ">
+                        Event delegation is a technique in the DOM where a parent element handles events for its child elements using event bubbling. Instead of adding event listeners to multiple child elements, a single listener is placed on a common ancestor, improving efficiency. When an event occurs, it propagates up the DOM tree, allowing the parent to detect and handle it. This is useful for dynamically added elements and optimizing performance in large applications.
                     </div>
                 </div>
                 <div class=" bg-[#fff] border  rounded-xl">
-                    <div class=" py-4 px-6 text-2xl font-bold">
+                    <div class=" py-4 px-6 text-xl font-bold">
                         Question-4: What is event bubbling in the DOM?
                     </div>
                     <hr class="w-full">
-                    <div class=" py-4 px-6 text-xl  ">
-                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
-                        page
-                        so that programs can change the document structure, style, and content. The DOM represents the
-                        document as nodes and objects; that way, programming languages can interact with the page.
+                    <div class=" py-4 px-6 text-lg  ">
+                        Event bubbling is a DOM mechanism where an event triggered on a child element propagates up to its ancestors. When an event occurs, it first executes on the target element and then bubbles up through parent elements until reaching the root (document). This allows parent elements to handle events triggered by their children. Bubbling is useful for event delegation but can sometimes lead to unintended behavior, which can be prevented using event.stopPropagation(). Most DOM events, like click, support bubbling by default.
                     </div>
                 </div>
                 <div class="bg-[#fff] border rounded-xl">
-                    <div class=" py-4 px-6 text-2xl font-bold">
+                    <div class=" py-4 px-6 text-xl font-bold">
                         Question-5: How do you create, add, and remove elements using JavaScript?
                     </div>
                     <hr class="w-full">
-                    <div class=" py-4 px-6 text-xl  ">
-                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
-                        page
-                        so that programs can change the document structure, style, and content. The DOM represents the
-                        document as nodes and objects; that way, programming languages can interact with the page.
+                    <div class=" py-4 px-6 text-lg  ">
+                        To create elements, use document.createElement('tag'). Add them with parentElement.appendChild(newElement) or parentElement.insertBefore(newElement, referenceElement). Remove elements via parentElement.removeChild(elementToRemove) or elementToRemove.remove(). These methods allow dynamic DOM manipulation, enabling you to construct interactive web pages by adding or removing content as needed, directly through JavaScript.
                     </div>
                 </div>
 
             </div>
-<script src="script/script.js"></script>
+            <script src="script/script.js"></script>
         </section>
     </main>
     <footer>
